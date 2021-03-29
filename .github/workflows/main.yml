@@ -2,13 +2,13 @@ name: Java CI with Maven Deploy to heroku
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 env:
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-  HEROKU_APP_NAME: ${{ 'spring-porgra-2' }}
+  HEROKU_APP_NAME: ${{ 'spring-porgra-2 }}
   HEROKU_PSS_DB: ${{ secrets.HEROKU_PSS_DB }}
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
       run: docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
 
     - name: Docker Build
-      run: docker build -f "demomvc/DockerFile".
+      run: docker build .
 
     - name: Publish
       run: |
