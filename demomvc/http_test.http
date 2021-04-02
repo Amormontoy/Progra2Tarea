@@ -10,7 +10,7 @@ Content-Type: application/json
 
 {
     "firstname" : "Añadido1",
-    "lastname" : "Añadido1"
+    "precio" : "3.0"
 }
 
 DELETE http://localhost:8080/employee/2 HTTP/1.1
@@ -22,6 +22,6 @@ Content-Type: application/json
 {
     "id":"3",
     "firstname" : "datoActualizado",
-    "lastname" : "datoActualizado"
+    "precio" : "3.0"
 }
 

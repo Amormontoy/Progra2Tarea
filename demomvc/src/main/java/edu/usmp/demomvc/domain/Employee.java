@@ -13,7 +13,7 @@ public class Employee {
 	    private Integer id;
 
     private String firstname;
-    private String lastname;
+    private double precio;
 
     //public Employee(String firstname,String lastname) {
         //this.firstname = firstname;
@@ -38,11 +38,11 @@ public class Employee {
         this.firstname = firstname;
     }
 
-    public String getLastname() {
-        return this.lastname;
+    public double getprecio() {
+        return this.precio;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setprecio(double precio) {
+        this.precio = precio;
     }
 }
